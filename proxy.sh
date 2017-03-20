@@ -38,7 +38,7 @@ for sLine in $(< $FILE_ORIGEN.tmp); do
     # Formato proxychains
     IP=`echo $sLine | cut -d':' -f 1` 
     PUERTO=`echo $sLine | cut -d':' -f 2` 
-    echo "http $IP $PUERTO" > $FILE_PROXYCHAINS
+    echo "http $IP $PUERTO" >> $FILE_PROXYCHAINS
   fi
   ((INDICE+=1))
 done
